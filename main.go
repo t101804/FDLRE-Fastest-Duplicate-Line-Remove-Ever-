@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("domains-amazon.txtrep")
+	file, err := os.Open("domains-amazon.txtrep") // change domains-amazon.textrep to what ever file and extension that you want to delete duplicate line 
 	if err != nil {
 		fmt.Println("Error opening file:", err)
 		return
@@ -54,7 +54,7 @@ func main() {
 
 	wg.Wait()
 	bar.Finish()
-	newFile, err := os.Create("name.txt")
+	newFile, err := os.Create("name.txt") // results file name , you can edit 
 	if err != nil {
 		fmt.Println("Error creating file:", err)
 		return
